@@ -1,0 +1,22 @@
+/* For a given integer array of size N You have to find all the occurrences (indices) of a
+ given element (key) and print them.Use a recursive function to solve this problem. */
+
+public class recursionq1 {
+    public static void occurrence(int arr[], int key, int i){
+        if(i==arr.length){
+            return;
+        }
+        if(arr[i]== key){
+            System.out.print(i+" ");
+        }
+        occurrence(arr,key,i+1);
+
+    }
+
+    public static void main(String args[]){
+        int arr[]= {1,2,5,3,2,9,6,2,4,3,5};
+        int key=2;
+        occurrence(arr,key,0);
+    }
+    
+}
