@@ -14,7 +14,7 @@ public class recursionq1 {
     }
 
     public static void main(String args[]){
-        int arr[]= {1,2,5,3,2,9,6,2,4,3,5};
+        int arr[]= {3, 2, 4, 5, 6, 2, 7, 2, 2};
         int key=2;
         occurrence(arr,key,0);
     }
