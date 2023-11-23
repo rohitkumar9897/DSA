@@ -4,13 +4,14 @@ public class dp {
         if(dp[n]!=0){
             return dp[n];
         }
+        int ans=0;
         for(int i=0; i<n; i++){
-            dp[n]+=findCatlan(i,dp)*findCatlan(n-i-1,dp);
+            ans+=findCatlan(i,dp)*findCatlan(n-i-1,dp);
         }
-        return dp[n];
+        return dp[n]=ans;
     }
     public static void main(String args[]){
-        int n=30;
+        int n=20;
         int dp[]=new int[n+1];
         dp[0]=1;
         dp[1]=1;
